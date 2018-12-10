@@ -12,8 +12,8 @@ import com.person.clustering.algorithm.AffinityPropagation;
 
 public class Main {
 
-	private static String file = "value.txt";
-
+	private static String file = "value_avgWeight.txt";
+//	private static String file = "value.txt";
 	public static void main(String[] arg) {
 		read(file);
 	}
