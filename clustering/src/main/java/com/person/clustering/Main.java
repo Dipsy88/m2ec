@@ -12,8 +12,8 @@ import com.person.clustering.algorithm.AffinityPropagation;
 
 public class Main {
 
-	private static String file = "value_avgWeight.txt";
-//	private static String file = "value.txt";
+//	private static String file = "value_avgWeight.txt";
+	private static String file = "value.txt";
 	public static void main(String[] arg) {
 		read(file);
 	}
@@ -25,9 +25,6 @@ public class Main {
 //			stream.forEach(System.out::println);
 
 			list = stream.map(line -> line.split("\t")).collect(Collectors.toList());
-
-			int a;
-			a = 3;
 
 		} catch (IOException e) {
 			e.printStackTrace();
