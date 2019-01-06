@@ -11,9 +11,17 @@ import java.util.stream.Stream;
 import com.person.clustering.algorithm.AffinityPropagation;
 
 public class Main {
-
-//	private static String file = "value_avgWeight.txt";
-	private static String file = "value.txt";
+//	private static String file = "GCP9/lt_bd_cost.txt";
+//	private static String file = "AWS9/lt_bd_cost.txt";
+//	private static String file = "AWS15/lt_bd_cost.txt";
+	
+	
+//	private static String file = "AWS15/lt_bd_cost.txt";
+//	private static String file = "AWS15/lt_bd_cost_80.txt";
+//	private static String file = "AWS15/lt_bd.txt";
+//	private static String file = "AWS15/lt.txt";
+	private static String file = "AWS15/bd.txt";
+	
 	public static void main(String[] arg) {
 		read(file);
 	}
@@ -72,7 +80,7 @@ public class Main {
 	public static void printClusters(List<AffinityPropagation.ClusterIds> clusterIdList) {
 		int i = 1;
 		for (AffinityPropagation.ClusterIds clusterId : clusterIdList) {
-			System.out.printf("Cluster %s is", i);
+			System.out.printf("Cluster %s is ", i);
 			System.out.println(clusterId.getDataCenterIdList());
 			i++;
 		}

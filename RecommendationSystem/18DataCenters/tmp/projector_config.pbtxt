@@ -1,0 +1,4 @@
+embeddings {
+  tensor_name: "embedding:0"
+  metadata_path: "/Users/Dipesh/OneDrive/Research_Engineer/Papers/M2EC/code/RecommendationSystem/18DataCenters/tmp/metadata.tsv"
+}
